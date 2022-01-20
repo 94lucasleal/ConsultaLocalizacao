@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConsultaLocalizacaoActivity">
+
+    <LinearLayout
+        android:layout_width="393dp"
+        android:layout_height="505dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvLatitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Latitude"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtLatitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="1234567890.,-"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/tvLongetude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Longetude"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtLongetude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="1234567890.,-"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="chamarGoogleMaps"
+            android:text="Buscar" />
+
+        <Button
+            android:id="@+id/btnObterLocalizacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="obterLocalizacaoAtual"
+            android:text="Obter Localização Atual" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
